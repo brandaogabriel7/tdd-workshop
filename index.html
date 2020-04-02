@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/webslides.css" />
+        <link rel="stylesheet" href="css/custom-text.css" />
+        <title>Test-driven Development</title>
+    </head>
+
+    <body>
+        <main role="main">
+            <article id="webslides" class="horizontal">
+                <section>
+                    <span
+                        class="background-left"
+                        style="background-image:url('images/background.png');"
+                    ></span>
+                    <div class="wrap">
+                        <div class="content-right">
+                            <h1><strong>Test-driven Development</strong></h1>
+                            <p class="text-intro">
+                                <span class="red">Vermelho</span> -
+                                <span class="green">Verde</span> -
+                                <span class="blue">Refatora</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="fullscreen fadeIn">
+                    <span
+                        class="background"
+                        style="background-image:url('images/whatisthat.gif');"
+                    ></span>
+                </section>
+                <section class="zoomIn">
+                    <div class="wrap">
+                        <div class="content-center">
+                            <h3>Histórico e conceito</h3>
+                            <ul class="flexblock specs">
+                                <li>
+                                    <div>
+                                        <h2>
+                                            Kent Beck
+                                        </h2>
+                                        Kent Beck é considerado o criador do TDD
+                                        e seu livro
+                                        <a
+                                            href="https://www.amazon.com.br/Test-Driven-Development-Kent-Beck/dp/0321146530"
+                                            >Test Driven Development: By
+                                            Example</a
+                                        >
+                                        foi um grande impulsionador do TDD.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h2>
+                                            Disciplina
+                                        </h2>
+                                        Como qualquer disciplina, requer estudo
+                                        constante e muita prática.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h2>
+                                            Ferramenta de feedback
+                                        </h2>
+                                        Quê?? Mas como assim?
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="fullscreen fadeIn">
+                    <span
+                        class="background"
+                        style="background-image:url('images/idontgetit.gif');"
+                    ></span>
+                </section>
+                <section class="bg-gradient-v">
+                    <span
+                        class="background dark"
+                        style="background-image:url('images/testesautomatizados.jpg')"
+                    ></span>
+                    <div class="content-left">
+                        <div class="wrap size-60">
+                            <p class="text-context">O QUE SÃO</p>
+                            <h2>Testes automatizados</h2>
+                        </div>
+                    </div>
+                </section>
+                <section class="aligncenter">
+                    <div class="wrap">
+                        <div class="content-center">
+                            <h2 class="text-landing">Tipos de testes</h2>
+                        </div>
+                        <hr />
+                        <ul class="flexblock">
+                            <li>
+                                <h2>
+                                    Testes de unidade
+                                </h2>
+                                Testam uma única unidade do sistema e como elas
+                                funcionam individualmente.
+                            </li>
+                            <li>
+                                <h2>
+                                    Testes de integração
+                                </h2>
+                                Testa como as unidades trabalham em conjunto,
+                                independente de seus funcionamentos individuais.
+                            </li>
+                            <li>
+                                <h2>
+                                    Testes de sistema
+                                </h2>
+                                Verificam o funcionamento do sistema como um
+                                todo, não se preocupando com o funcionamento das
+                                unidades e integrações.
+                            </li>
+                            <li>
+                                <h2>
+                                    Testes de aceitação
+                                </h2>
+                                Semelhantes aos testes de sistema porém são mais
+                                superficiais. Garantem que o sistema atende aos
+                                requisitos mínimos para aceitação.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="fullscreen">
+                    <div class="card-50">
+                        <figure>
+                            <img src="images/redgreenrefactor.png" alt="" />
+                        </figure>
+                        <div class="flex-content">
+                            <h2>3 Leis do TDD</h2>
+                            <ul class="description">
+                                <li>
+                                    <h5>
+                                        <strong class="text-label"
+                                            >1ª lei:</strong
+                                        >
+                                    </h5>
+                                    <p>
+                                        Nunca escreva código de produção antes
+                                        de escrever um teste que falha.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        <strong class="text-label"
+                                            >2ª lei:</strong
+                                        >
+                                    </h5>
+                                    <p>
+                                        Só escreva código de teste o suficiente
+                                        para ter um teste que falha. (Não
+                                        compilar também é falhar)
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        <strong class="text-label"
+                                            >3ª lei:</strong
+                                        >
+                                    </h5>
+                                    <p>
+                                        Só escreva código de produção o
+                                        suficiente para passar no teste.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="wrap">
+                        <div class="content-left">
+                            <h2>Por quê?</h2>
+                            <p>
+                                Quais são as vantagens dessa abordagem?
+                            </p>
+                            <div class="content-left">
+                                <h3>Os testes orientam o seu design</h3>
+                                <p>
+                                    Isso não quer dizer que você não planeja a
+                                    arquitetura do seu software antes de iniciar
+                                    o desenvolvimento.
+                                </p>
+                            </div>
+                            <div class="content-left">
+                                <h3>Código de maior qualidade</h3>
+                                <p>
+                                    Escrever os testes antes do código não te
+                                    transforma em um desenvolvedor melhor
+                                    automaticamente.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-left">
+                            <img
+                                id="graph-slide"
+                                src="images/tddvsnontdd.png"
+                                alt="Graph supporting TDD"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section class="fullscreen bg-gradient-r">
+                    <div class="card-50">
+                        <figure>
+                            <img src="images/maonamassa.jpg" alt="" />
+                        </figure>
+                        <div class="flex-content">
+                            <div class="content-left">
+                                <h3>
+                                    <a
+                                        href="https://kata-log.rocks/string-calculator-kata"
+                                        target="_blank"
+                                        >STRING CALCULATOR</a
+                                    >
+                                </h3>
+                                <p class="text-context">Mão na massa</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="wrap">
+                        <h2>Considerações finais</h2>
+                        <p>Verdades e recomendações sobre TDD</p>
+                        <hr />
+                        <div class="grid">
+                            <div class="column">
+                                <h4>
+                                    <a
+                                        target="_blank"
+                                        href="https://www.amazon.com.br/s?k=clean+code&adgrpid=88080910224&gclid=Cj0KCQjwmpb0BRCBARIsAG7y4zaWBbYN_sRoRROkjD_MqlDXWS2eOMIwkp-yHtTe6HljKzy8_VAlRDcaAtLcEALw_wcB&hvadid=425982495751&hvdev=c&hvlocphy=1031483&hvnetw=g&hvqmt=e&hvrand=7268870625305687082&hvtargid=kwd-301191331858&hydadcr=5620_11235101&tag=hydrbrgk-20&ref=pd_sl_82uu3a5m0y_e"
+                                        >Clean Code</a
+                                    >
+                                </h4>
+                                <p>
+                                    Seus testes são códigos como qualquer outro
+                                    e o Clean Code se aplica a eles.
+                                </p>
+                            </div>
+                            <div class="column">
+                                <h4>Documentação</h4>
+                                <p>
+                                    Testes de qualidade tendem a se tornar a
+                                    documentação do seu código.
+                                </p>
+                            </div>
+                            <div class="column">
+                                <h4>
+                                    Testes
+                                    <a
+                                        href="https://dev.azure.com/curupira/Takepedia/_wiki/wikis/Takepedia.wiki/834/⚗-Writing-your-F.I.R.S.T.-Unit-Tests"
+                                    >
+                                        F.I.R.S.T.
+                                    </a>
+                                </h4>
+                                <p>
+                                    Testes devem ser rápidos; independentes e
+                                    isolados; repetíveis; auto-validáveis;
+                                    completos.
+                                </p>
+                            </div>
+                            <div class="column">
+                                <h4>Prática</h4>
+                                <p>
+                                    Noções de design não são aprendidas só com
+                                    teoria, elas são desenvolvidas com estudo
+                                    constante e muita prática.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-black-blue">
+                    <div class="wrap">
+                        <blockquote class="text-quote">
+                            <p>
+                                Eu não sou um ótimo programador; Eu sou apenas
+                                um programador com ótimos hábitos.
+                            </p>
+                            <p>
+                                <cite
+                                    ><a href="https://www.kentbeck.com"
+                                        >Kent Beck</a
+                                    >, criador do TDD.</cite
+                                >
+                            </p>
+                        </blockquote>
+                    </div>
+                </section>
+                <section>
+                    <div class="wrap size-60">
+                        <h2>
+                            Dá uma lida aí
+                        </h2>
+                        <p class="text-intro">
+                            Bibliografia e materiais de estudo
+                        </p>
+                        <hr />
+                        <ul class="description">
+                            <li>
+                                <span class="text-label">Code Katas:</span>
+                                <a href="kata-log.rocks/">Kata-Log</a>
+                            </li>
+                            <li>
+                                <span class="text-label">Uncle Bob:</span>
+                                <a
+                                    target="_blank"
+                                    href="https://www.amazon.com.br/s?k=clean+code&adgrpid=88080910224&gclid=Cj0KCQjwmpb0BRCBARIsAG7y4zaWBbYN_sRoRROkjD_MqlDXWS2eOMIwkp-yHtTe6HljKzy8_VAlRDcaAtLcEALw_wcB&hvadid=425982495751&hvdev=c&hvlocphy=1031483&hvnetw=g&hvqmt=e&hvrand=7268870625305687082&hvtargid=kwd-301191331858&hydadcr=5620_11235101&tag=hydrbrgk-20&ref=pd_sl_82uu3a5m0y_e"
+                                    >Clean Code</a
+                                >
+                            </li>
+                            <li>
+                                <span class="text-label">James Bender:</span>
+                                <a
+                                    href="https://www.telerik.com/blogs/30-days-tdd-day-one-what-is-tdd"
+                                    >30 days of TDD</a
+                                >
+                            </li>
+                            <li>
+                                <span class="text-label">Kent Beck:</span>
+                                <a
+                                    href="https://www.amazon.com.br/Test-Driven-Development-Kent-Beck/dp/0321146530"
+                                    >Test Driven Development: By Example</a
+                                >
+                            </li>
+                            <li>
+                                <span class="text-label"
+                                    >Frameworks de teste:</span
+                                >
+                                <a target="_blank" href="https://xunit.net" ;
+                                    >xUnit</a
+                                >
+                                <a
+                                    target="_blank"
+                                    href="https://shouldly.readthedocs.io/en/latest/"
+                                    ;
+                                    >Shouldly</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <script src="js/webslides.js"></script>
+        <script>
+            window.ws = new WebSlides();
+        </script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
