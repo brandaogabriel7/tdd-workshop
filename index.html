@@ -15,7 +15,7 @@
         />
         <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/webslides.css" />
-        <link rel="stylesheet" href="css/custom-text.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <title>Test-driven Development</title>
     </head>
 
@@ -246,6 +246,45 @@
                 </section>
                 <section>
                     <div class="wrap">
+                        <h3>StringCalculator.Add</h3>
+                        <pre class="bg-secondary">
+int Add(string operators)</pre
+                        >
+                        <ul id="steps-kata" class="flexblock steps invisible">
+                            <li>
+                                <h2>Passo 1</h2>
+                                <ul>
+                                    <li>String vazia retorna 0</li>
+                                    <li>
+                                        Um único número retorna ele mesmo
+                                    </li>
+                                    <li>
+                                        Dois números separados por vírgula
+                                        retorna a soma
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="process step-2"></div>
+                                <h2>Passo 2</h2>
+                                <p>
+                                    O método Add deve conseguir lidar com
+                                    qualquer quantidade de números
+                                </p>
+                            </li>
+                            <li>
+                                <div class="process step-3"></div>
+                                <h2>Passo 3</h2>
+                                <p>
+                                    O método deve aceitar \n como delimitador
+                                    também
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="wrap">
                         <h2>Considerações finais</h2>
                         <p>Verdades e recomendações sobre TDD</p>
                         <hr />
@@ -376,6 +415,7 @@
         <script>
             window.ws = new WebSlides();
         </script>
-        <script src="js/index.js"></script>
+        <script src="js/graph-slides.js"></script>
+        <script src="js/steps-kata.js"></script>
     </body>
 </html>

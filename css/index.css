@@ -9,3 +9,7 @@
 .blue {
     color: #1699b0;
 }
+
+.invisible {
+    opacity: 0;
+}
