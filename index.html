@@ -15,17 +15,17 @@
         />
         <link rel="stylesheet" href="css/animate.css" />
         <link rel="stylesheet" href="css/webslides.css" />
-        <link rel="stylesheet" href="css/custom-text.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <title>Test-driven Development</title>
     </head>
 
     <body>
         <main role="main">
-            <article id="webslides" class="horizontal">
+            <article id="webslides" class="vertical">
                 <section>
                     <span
                         class="background-left"
-                        style="background-image:url('images/background.png');"
+                        style="background-image: url('images/background.png');"
                     ></span>
                     <div class="wrap">
                         <div class="content-right">
@@ -41,7 +41,7 @@
                 <section class="fullscreen fadeIn">
                     <span
                         class="background"
-                        style="background-image:url('images/whatisthat.gif');"
+                        style="background-image: url('images/whatisthat.gif');"
                     ></span>
                 </section>
                 <section class="zoomIn">
@@ -57,11 +57,12 @@
                                         Kent Beck é considerado o criador do TDD
                                         e seu livro
                                         <a
+                                            target="_blank"
                                             href="https://www.amazon.com.br/Test-Driven-Development-Kent-Beck/dp/0321146530"
                                             >Test Driven Development: By
                                             Example</a
                                         >
-                                        foi um grande impulsionador do TDD.
+                                        foi um grande impulsionador da técnica.
                                     </div>
                                 </li>
                                 <li>
@@ -88,13 +89,15 @@
                 <section class="fullscreen fadeIn">
                     <span
                         class="background"
-                        style="background-image:url('images/idontgetit.gif');"
+                        style="background-image: url('images/idontgetit.gif');"
                     ></span>
                 </section>
                 <section class="bg-gradient-v">
                     <span
                         class="background dark"
-                        style="background-image:url('images/testesautomatizados.jpg')"
+                        style="
+                            background-image: url('images/testesautomatizados.jpg');
+                        "
                     ></span>
                     <div class="content-left">
                         <div class="wrap size-60">
@@ -144,7 +147,7 @@
                     </div>
                 </section>
                 <section class="fullscreen">
-                    <div class="card-50">
+                    <div class="card-60">
                         <figure>
                             <img src="images/redgreenrefactor.png" alt="" />
                         </figure>
@@ -231,14 +234,53 @@
                             <div class="content-left">
                                 <h3>
                                     <a
-                                        href="https://kata-log.rocks/string-calculator-kata"
                                         target="_blank"
+                                        href="https://kata-log.rocks/string-calculator-kata"
                                         >STRING CALCULATOR</a
                                     >
                                 </h3>
                                 <p class="text-context">Mão na massa</p>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="wrap">
+                        <h3>StringCalculator.Add</h3>
+                        <pre class="bg-secondary">
+int Add(string operators)</pre
+                        >
+                        <ul id="steps-kata" class="flexblock steps invisible">
+                            <li>
+                                <h2>Passo 1</h2>
+                                <ul>
+                                    <li>String vazia retorna 0</li>
+                                    <li>
+                                        Um único número retorna ele mesmo
+                                    </li>
+                                    <li>
+                                        Dois números separados por vírgula
+                                        retorna a soma
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="process step-2"></div>
+                                <h2>Passo 2</h2>
+                                <p>
+                                    O método Add deve conseguir lidar com
+                                    qualquer quantidade de números
+                                </p>
+                            </li>
+                            <li>
+                                <div class="process step-3"></div>
+                                <h2>Passo 3</h2>
+                                <p>
+                                    O método deve aceitar \n como delimitador
+                                    também
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </section>
                 <section>
@@ -271,6 +313,7 @@
                                 <h4>
                                     Testes
                                     <a
+                                        target="_blank"
                                         href="https://dev.azure.com/curupira/Takepedia/_wiki/wikis/Takepedia.wiki/834/⚗-Writing-your-F.I.R.S.T.-Unit-Tests"
                                     >
                                         F.I.R.S.T.
@@ -302,7 +345,9 @@
                             </p>
                             <p>
                                 <cite
-                                    ><a href="https://www.kentbeck.com"
+                                    ><a
+                                        target="_blank"
+                                        href="https://www.kentbeck.com"
                                         >Kent Beck</a
                                     >, criador do TDD.</cite
                                 >
@@ -313,16 +358,15 @@
                 <section>
                     <div class="wrap size-60">
                         <h2>
-                            Dá uma lida aí
-                        </h2>
-                        <p class="text-intro">
                             Bibliografia e materiais de estudo
-                        </p>
+                        </h2>
                         <hr />
                         <ul class="description">
                             <li>
                                 <span class="text-label">Code Katas:</span>
-                                <a href="kata-log.rocks/">Kata-Log</a>
+                                <a target="_blank" href="kata-log.rocks/"
+                                    >Kata-Log</a
+                                >
                             </li>
                             <li>
                                 <span class="text-label">Uncle Bob:</span>
@@ -335,6 +379,7 @@
                             <li>
                                 <span class="text-label">James Bender:</span>
                                 <a
+                                    target="_blank"
                                     href="https://www.telerik.com/blogs/30-days-tdd-day-one-what-is-tdd"
                                     >30 days of TDD</a
                                 >
@@ -342,6 +387,7 @@
                             <li>
                                 <span class="text-label">Kent Beck:</span>
                                 <a
+                                    target="_blank"
                                     href="https://www.amazon.com.br/Test-Driven-Development-Kent-Beck/dp/0321146530"
                                     >Test Driven Development: By Example</a
                                 >
@@ -369,6 +415,7 @@
         <script>
             window.ws = new WebSlides();
         </script>
-        <script src="js/index.js"></script>
+        <script src="js/graph-slides.js"></script>
+        <script src="js/steps-kata.js"></script>
     </body>
 </html>
